@@ -1,3 +1,5 @@
+#To solve differential equation and plot graph using ODEINT
+
 import numpy as np 
 import matplotlib.pyplot as plt 
 from scipy.integrate import odeint
