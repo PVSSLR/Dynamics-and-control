@@ -25,9 +25,12 @@ u = 0
 y = odeint(model,y0,t,args=(u,))
 
 #plot 
-plt.plot(t,y)
+plt.plot(t,y,linewidth=3, label = r'$\frac{dx}{dt} = 3 * \exp(-t) $')
+plt.plot([0,10,10,40],[0,0,2,2],linewidth=2, label = 'u(t)')
+
 plt.xlabel("time")
 plt.ylabel("y(t)")
+plt.legend()
 plt.show()
 
 
