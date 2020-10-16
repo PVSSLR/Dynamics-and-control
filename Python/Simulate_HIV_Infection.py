@@ -30,7 +30,7 @@ kr6 = 100         # production of virus by infected cells
 t = np.linspace(0,15,1000)
 
 z = odeint(model,x,t)
-
+#Plot
 plt.semilogy(t,z[:,0],'b',label = 'H')
 plt.semilogy(t,z[:,1],'g:',label = 'I')
 plt.semilogy(t,z[:,2],'r--',label = 'V')
